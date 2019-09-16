@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build: .
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+    - ./docker/db/data:/var/lib/mysql
+    ports: 3306:3306

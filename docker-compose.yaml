@@ -6,10 +6,14 @@ services:
     depends_on:
       - db
   db:
-    image: mysql:5.7
+    image: mysql:8
     environment:
       MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
     volumes:
+    - ./docker/db/init:/docker-entrypoint-initdb.d
     - ./docker/db/data:/var/lib/mysql
+    - ./docker/db/conf/:/etc/mysql/conf.d
     ports: 
-    - 3306:3306
+    - "3306:3306"

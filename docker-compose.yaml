@@ -1,14 +1,17 @@
 version: '3'
 services:
   web:
-    build: .
+    build:
+      context: ./docker/web/
     depends_on:
       - db
   db:
     image: mysql:5.7
-    container_name: mysql
+    build:
+      context: ./docker/db/
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
     - ./docker/db/data:/var/lib/mysql
-    ports: 3306:3306
+    ports: 
+    - 3306:3306

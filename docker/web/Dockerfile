@@ -12,6 +12,7 @@ RUN yum -y update
 RUN yum -y install epel-release
 RUN yum -y install git make autoconf curl wget
 RUN yum -y install gcc-c++ glibc-headers openssl-devel readline libyaml-devel readline-devel zlib zlib-devel sqlite-devel bzip2
+RUN yum -y install nodejs
 RUN yum clean all
 
 # rbenvをインストール

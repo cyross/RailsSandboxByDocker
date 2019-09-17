@@ -7,8 +7,6 @@ services:
       - db
   db:
     image: mysql:5.7
-    build:
-      context: ./docker/db/
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:

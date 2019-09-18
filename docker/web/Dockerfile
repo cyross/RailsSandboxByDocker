@@ -21,7 +21,7 @@ RUN curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 RUN yum -y install nodejs
 # YARNをインストール
 RUN wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo
-RUN yum install yarn
+RUN yum -y install yarn
 RUN yum clean all
 
 # rbenvをインストール

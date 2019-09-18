@@ -8,3 +8,4 @@
 * https://qiita.com/tommy_aka_jps/items/b2ae85cbeab77e12a925
 * Yarnのインストール https://qiita.com/seiyamaeda/items/18439866acf9ded9a2de
 * Node.js8をcentos7にインストール https://qiita.com/you21979@github/items/4c9c382b9536effc590d
+* centos7にMySQL8をインストール https://qiita.com/zaburo/items/7518a432d915c061983f

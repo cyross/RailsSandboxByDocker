@@ -48,3 +48,5 @@ bower.json
 node_modules/
 
 docker/db/data/*
+docker/db/work/*
+docker/web/work/*

@@ -29,3 +29,4 @@ rails new hoge --database=mysql
 * Node.js8をcentos7にインストール https://qiita.com/you21979@github/items/4c9c382b9536effc590d
 * centos7にMySQL8をインストール https://qiita.com/zaburo/items/7518a432d915c061983f
 * yumがsqliteに依存している話 https://qiita.com/kai_kou/items/c18b68a7916251231f6d
+* docker-compose upしたコンテナを起動したままにする方法 https://qiita.com/sekitaka_1214/items/2af73d5dc56c6af8a167

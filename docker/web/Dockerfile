@@ -13,7 +13,7 @@ RUN yum -y install epel-release
 RUN yum -y install git make autoconf curl wget
 RUN yum -y install gcc-c++ glibc-headers openssl-devel readline libyaml-devel readline-devel zlib zlib-devel sqlite-devel bzip2
 # MySQL関係のGemインストールに必要
-RUN yum install mysql-devel
+RUN yum -y install mysql-devel
 # インストールするNode.jsのバージョンは8.Xを指定
 RUN curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 RUN yum -y install nodejs

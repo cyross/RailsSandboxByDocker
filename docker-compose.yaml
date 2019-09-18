@@ -11,6 +11,7 @@ services:
     - "3000:3000"
     - "8080:8080"
     - "80:80"
+    tty: true
   db:
     image: mysql:8
     environment:
@@ -24,3 +25,4 @@ services:
     - ./docker/db/work:/work
     ports: 
     - "3306:3306"
+    tty: true

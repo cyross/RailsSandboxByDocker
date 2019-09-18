@@ -15,7 +15,7 @@ RUN yum -y install gcc-c++ glibc-headers openssl-devel readline libyaml-devel re
 # MySQL関係のGemインストールに必要
 # DBのバージョンはMySQL8なのでおまじないをかける
 RUN rpm -ivh https://dev.mysql.com/get/mysql80-community-release-el7-2.noarch.rpm
-RUN yum -y install mysql-devel
+RUN yum -y install mysql mysql-devel
 # インストールするNode.jsのバージョンは8.Xを指定
 RUN curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 RUN yum -y install nodejs

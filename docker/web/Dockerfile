@@ -12,7 +12,10 @@ RUN yum -y update
 RUN yum -y install epel-release
 RUN yum -y install git make autoconf curl wget
 RUN yum -y install gcc-c++ glibc-headers openssl-devel readline libyaml-devel readline-devel zlib zlib-devel sqlite-devel bzip2
+# インストールするNode.jsのバージョンは8.Xを指定
+RUN curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 RUN yum -y install nodejs
+# YARNをインストール
 RUN wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo
 RUN yum install yarn
 RUN yum clean all

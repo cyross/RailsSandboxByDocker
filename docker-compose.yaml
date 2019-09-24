@@ -5,6 +5,7 @@ services:
       context: ./docker/web/
     depends_on:
       - db
+      - redis
     volumes:
     - ./docker/web/work:/work
     ports:
@@ -25,4 +26,14 @@ services:
     - ./docker/db/work:/work
     ports: 
     - "3306:3306"
+    tty: true
+  redis:
+    image: redis:5
+    environment:
+      REDISPORT: 6379
+    volumes:
+    - ./docker/redis/work:/work
+    - ./docker/redis/redis:/etc/redis
+    ports:
+    - "6379:6379"
     tty: true

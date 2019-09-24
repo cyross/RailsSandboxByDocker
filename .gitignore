@@ -50,3 +50,5 @@ node_modules/
 docker/db/data/*
 docker/db/work/*
 docker/web/work/*
+docker/redis/work/*
+docker/redis/redis/*
